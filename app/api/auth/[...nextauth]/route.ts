@@ -16,7 +16,8 @@ const handler = NextAuth({
             clientSecret: process.env.OKTA_OAUTH2_CLIENT_SECRET as string,
             issuer: process.env.OKTA_OAUTH2_ISSUER as string
           }),
-    ]
+    ],
+    secret: process.env.NEXTAUTH_SECRET as string 
 })
 
 export { handler as GET, handler as POST }
