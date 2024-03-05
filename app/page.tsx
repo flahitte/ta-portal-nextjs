@@ -32,6 +32,7 @@ export default function Home() {
   // rendering components for not logged in users
   return (
     <div className="w-full h-screen flex flex-col justify-center items-center">
+      <div>hello</div>
         <p className="text-2xl mb-2">Not Signed In</p>
         {/* <button className="bg-none border-gray-300 border py-2 px-6 rounded-md mb-2" onClick={() => signIn('github')}>Sign in with github</button> */}
         <button className="bg-none border-gray-300 border py-2 px-6 rounded-md mb-2" onClick={() => signIn()}>Sign in with Okta</button>
